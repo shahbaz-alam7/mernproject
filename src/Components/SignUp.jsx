@@ -27,7 +27,7 @@ const SignUp = () => {
   const submitData = async (e) => {
     e.preventDefault();
     const { name, email, phone, work, password, cpassword } = userData;
-    const res = await fetch("https://itz-shahbaz.herokuapp.com/register", {
+    const res = await fetch("/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

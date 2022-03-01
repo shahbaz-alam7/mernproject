@@ -6,7 +6,7 @@ const Home = () => {
   const [name, setName] = useState("");
   const data = async () => {
     try {
-      let res = await fetch("https://itz-shahbaz.herokuapp.com/getData", {
+      let res = await fetch("/getData", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

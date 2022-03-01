@@ -6,7 +6,7 @@ const Logout = () => {
   const { state, dispatch } = useContext(UserContext);
   const navigate = useNavigate();
   useEffect(() => {
-    fetch("https://itz-shahbaz.herokuapp.com/logout", {
+    fetch("/logout", {
       method: "GET",
       headers: {
         // Accept: "application/json",

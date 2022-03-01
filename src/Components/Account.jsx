@@ -12,7 +12,7 @@ const Account = () => {
   }, []);
   const callAccount = async () => {
     try {
-      const res = await fetch("https://itz-shahbaz.herokuapp.com/about", {
+      const res = await fetch("/about", {
         method: "GET",
         headers: {
           Accept: "application/json",

@@ -14,7 +14,7 @@ const Contact = () => {
   // ! Getting name email and phone from backend
   const userContact = async () => {
     try {
-      const res = await fetch("https://itz-shahbaz.herokuapp.com/getData", {
+      const res = await fetch("/getData", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

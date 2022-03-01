@@ -21,7 +21,7 @@ const Login = () => {
     e.preventDefault();
     // console.log(inputVal);
     const { email, password } = inputVal;
-    let res = await fetch("https://itz-shahbaz.herokuapp.com/signin", {
+    let res = await fetch("/signin", {
       method: "post",
       headers: {
         "Content-Type": "application/json",
