@@ -1,0 +1,12 @@
+.footer {
+  background-color: black;
+  bottom: 0;
+  text-align: center;
+  width: 100vw;
+}
+.footer-content,
+.footer-content a {
+  padding: 5px 5px;
+  color: white;
+  text-decoration: none;
+}

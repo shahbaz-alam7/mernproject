@@ -1,0 +1,15 @@
+#nav img {
+  width: 150px;
+  height: 40px;
+  /* border: 2px solid black; */
+}
+@media screen and (max-width: 600px) {
+  img {
+    width: 140px;
+  }
+
+  #nav-ul {
+    /* overflow: scroll; */
+    scroll-behavior: smooth;
+  }
+}

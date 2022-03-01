@@ -1,0 +1,80 @@
+:root {
+  --box-shadow: 5px -8px 10px rgba(0, 0, 0, 0.2),
+    -10px 5px 10px rgba(0, 0, 0, 0.2), 15px 8px 10px rgba(0, 0, 0, 0.2);
+}
+.account {
+  background-color: rgb(248, 227, 227);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  width: 100%;
+}
+
+.acc-container {
+  background-color: white;
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
+  display: flex;
+}
+.account .acc-container .box-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.account .acc-container .box-2 {
+  display: flex;
+  align-items: center;
+}
+.user-details {
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+}
+.user-details > div {
+  padding: 20px;
+}
+.headings p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.results p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: blue;
+}
+.account .acc-container .acc-box .acc-img img {
+  width: 200px;
+  margin: 40px;
+  border: 2px solid black;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 870px) {
+  .account {
+    background-color: white;
+    /* height: 100%; */
+    padding-top: 30px;
+    padding: 30px auto;
+
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  .user-details > div {
+    padding: 2px;
+  }
+  .acc-container {
+    flex-direction: column;
+    width: 90%;
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  .acc-container {
+  }
+}
